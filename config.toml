@@ -2,3 +2,35 @@ baseURL = "https://tonynatale.xyz"
 languageCode = "en-us"
 title = "Tony Natale"
 theme = "hallo"
+disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
+
+[Author]
+    name = "Tony Natale"
+
+[params]
+
+    [[params.links]]
+        iconset = "fas"
+        icon = "envelope"
+        title = "E-mail"
+        url = "mailto:anatale@protonmail.com"
+
+    [[params.links]]
+        icon = "github"
+        title = "Github"
+        url = "https://github.com/tonytheleg"
+
+    [[params.links]]
+        icon = "twitter"
+        title = "Twitter"
+        url = "https://twitter.com/tonytheleg"
+    
+    [[params.links]]
+        icon = "twitter"
+        title = "Twitter"
+        url = "https://twitter.com/tonytheleg"
+    
+    [[params.links]]
+        icon = "twitter"
+        title = "Twitter"
+        url = "https://www.linkedin.com/in/antonynataleit"  
