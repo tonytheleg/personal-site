@@ -28,9 +28,4 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
     [[params.links]]
         icon = "twitter"
         title = "Twitter"
-        url = "https://twitter.com/tonytheleg"
-    
-    [[params.links]]
-        icon = "twitter"
-        title = "Twitter"
         url = "https://www.linkedin.com/in/antonynataleit"  
