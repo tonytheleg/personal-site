@@ -26,6 +26,11 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
         url = "https://twitter.com/tonytheleg"
     
     [[params.links]]
-        icon = "twitter"
-        title = "Twitter"
+        icon = "linkedin"
+        title = "LinkedIn"
         url = "https://www.linkedin.com/in/antonynataleit"  
+
+    [params.colors]
+        background = "#3399ff"
+        foreground = "#000000"
+        hover = "#FFFFFF"
