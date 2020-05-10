@@ -1,34 +1,20 @@
 ### Setup Guide
 
-While running a single-page site using Flask is overkill and really has no benefit, I wanted more Flask practice so there...I did it!
+While running a single-page site using Flask is overkill, I wanted more Flask practice so there...I did it!
 
-DO's guide on using [Nginx with Flask and Gunicorn](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04) was very helpful, I made some changes
+DO's guide on using [Nginx with Flask and Gunicorn](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04) was very helpful, I did make the following tweaks to the instructions below:
 
-#### Dependencies
-
-- Install needed packages (for Ubuntu)
+- Used Python 3.8
 ```
-sudo apt install python3.8 python3.8-dev python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
+sudo apt install python3.8 python3.8-dev
 ```
 
-- Install pipenv
+- Used Pipenv instead of venv
 ```
 sudo pip3 install pipenv
-```
-
-- Pull this repo for examples, or just grab the requirements.txt file for next step
-
-- Create your pipenv project, with venv file locally, makes setting up systemd file easier for path
-```
 PIPENV_VENV_IN_PROJECT=1 pipenv --python python3.8
 pipenv shell
 pipenv install -r requirements.txt
 ```
 
-MORE INSTRUCTIONS TO COME
-
-Install Nginx
-Copy Nginx Site config over
-Copy systemd file over
-Create, enable, start, etc
-Certbot steps
+Examples of the systemd file and nginx config file available in ```configs``` directory

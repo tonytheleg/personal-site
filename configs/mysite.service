@@ -1,13 +1,13 @@
 [Unit]
-Description=Gunicorn instance to serve myproject
+Description=Gunicorn instance to serve my site
 After=network.target
 
 [Service]
-User=tony
+User=YOU-USERNAME
 Group=www-data
-WorkingDirectory=/home/tony/personal-site
-Environment="PATH=/home/tony/personal-site/.venv/bin
-ExecStart=/home/tony/personal-site/.venv/bin/gunicorn --workers 3 --bind unix:mysite.sock -m 007 wsgi:app
+WorkingDirectory=/home/YOU-USERNAME/personal-site
+Environment="PATH=/home/YOU-USERNAME/personal-site/.venv/bin
+ExecStart=/home/YOU-USERNAME/personal-site/.venv/bin/gunicorn --workers 3 --bind unix:mysite.sock -m 007 wsgi:app
 
 [Install]
 WantedBy=multi-user.target
